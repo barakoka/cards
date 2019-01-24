@@ -1,0 +1,60 @@
+* {background: #125f3f; padding: 0; margin: 0; border: 0;}
+
+
+#mainBlock {
+    display: flex; 
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.cardcolum {
+	width: 200px;
+}
+
+#header {
+	display: flex; 
+    justify-content: center;
+    color: rgb(255,255,255);
+    font-size: 48px;
+    font-style: italic;
+    padding-bottom: 100px;
+}
+
+.winblock{
+    position: absolute; 
+    display:block;
+    top: 370px;
+    left: 40%;
+    padding: 5px;
+    text-align: center;
+    color: rgb(255,255,255);
+    font-size: 50px;
+    font-style: italic;
+    border-radius: 20px;
+}
+
+.username {
+	display: flex;
+	justify-content: center; 
+	color: rgb(255,255,255);
+    font-size: 24px;
+    font-style: italic;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 200px;
+}
+
+.cardfild {
+	display: flex;
+	justify-content: center;
+	width: 200px;
+}
+
+.battelfild {	
+}
+
+#centercolum {
+	display: flex; 
+    justify-content: space-evenly;
+    width: 350px;
+}

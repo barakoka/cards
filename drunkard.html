@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Drunkard</title>
+    <link rel="stylesheet" type="text/css" href="18.css">
+    <script src="18.js"></script>
+  </head>
+  <body onload="sort_cards()">
+    <div id="downbar" class="winblock"></div>
+    <div id="header">Drunkard</div>
+    <div id="mainBlock">            
+        <div id="leftcolum" class="cardcolum">            
+            <div class="username">Computer</div>
+            <div id="cpu" class="cardfild">
+                <img src="cards/000.png" height="200px">
+            </div>
+            <div id="HeadCPU" class="username"></div>
+        </div>
+
+        <div id="centercolum">    
+            <div id="cardblock_cpu" class="bttlefild">
+
+            </div>
+            <div id="cardblock_user" class="bttlefild">
+                
+            </div>
+        </div>
+
+        <div id="rightcolum" class="cardcolum">
+            <div class="username">Player</div>
+            <div id="player" class="cardfild">
+                <img id="uc" src="cards/000.png" height="200px" onclick="start()">
+            </div>
+            <div id="HeadPL" class="username"></div>
+        </div>    
+    </div>
+  </body>
+</html>
