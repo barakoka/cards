@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Choise the game</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div id="downbar" class="winblock"></div>
+    
+    <div id="mainBlock" class="block">
+        <div id="centralBlock">
+            <div id="header" class="midblock">Black Jack</div>
+            <div id="HeadCPU" class="midblock">Dealer</div>
+            <div id="cpu" class="cardfild"></div>
+            <div class="midblock"></div>
+            <div id="cardblock">
+                <div class="vrt">
+                    <img src="cards/000.png" height="200px" onclick="start()">
+                    <button id="button" onclick="open_cards()">OPEN CARDS</button>
+                </div>
+            </div>
+            <div id="HeadPL" class="midblock">Player</div>
+            <div id="player" class="cardfild"></div>
+        </div>
+    </div>            
+  </body>
+</html>
