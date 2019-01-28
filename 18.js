@@ -78,16 +78,23 @@ function click1(){
   addCard('cardblock_cpu', drink_arr[j], drink_arr[j]);
   comp_cards.splice(0, 1);
   console.log('take_card ' + drink_arr[j-1] + '   ' + drink_arr[j] + '\n' + user_cards + '\n' + comp_cards + '\n');
-  click = 2;
+  if (count_of_card(drink_arr[j-1]) == count_of_card(drink_arr[j])){
+    click = 2;
+  }
+  else {click = 3;}
+
 }
 
 function click2(){
   console.log('start click2 \n');
-  if (count_of_card(drink_arr[j-1]) == count_of_card(drink_arr[j])){
-    click = 1;
+     click = 1;
     drink();
-  }
-    else if (best_card(drink_arr[j-1], drink_arr[j])){
+}
+
+function click3(){
+  console.log('start click3 \n');
+
+  if (best_card(drink_arr[j-1], drink_arr[j])){
       for (var i = drink_arr.length - 1; i >= 0; i--) {
         user_cards.push(drink_arr[i]);
         console.log('to user: ' + drink_arr[i] + '\n');
@@ -100,10 +107,8 @@ function click2(){
       click = 3;
     }
   }
-}
+  
 
-function click3(){
-  console.log('start click3 \n');
   console.log(user_cards + '\n' + comp_cards + '\n' + '---------------' + '\n' + drink_arr + '\n');
   remCards(drink_arr);
   drink_arr = [];

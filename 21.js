@@ -93,7 +93,8 @@ function open_card() {
 function open_cards() {
   if (bool){
     open_card();
-    if (comp_count > user_count){writeOnGame('Dealer Win');}
-    else {writeOnGame('Player Win!');}
+    if (comp_count > user_count){writeOnGame('Dealer Win!');}
+    else if (comp_count < user_count){writeOnGame('Player Win!');}
+    else {writeOnGame('Draw game!');}
   }
 }
