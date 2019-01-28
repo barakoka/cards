@@ -43,6 +43,18 @@
     background-color: rgb(200,200,100);
 }
 
+.gameName{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    font-size: 24px;
+    color: rgb(0,0,155);
+}
+
+.rules {
+    color: rgb(155,0,0);
+}
+
 /*--------------------------------------*/
 
 #centralBlock {width: 100%;}
